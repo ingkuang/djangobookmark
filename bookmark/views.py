@@ -13,6 +13,7 @@ class BookmarkCreateView(CreateView):
 
 class BookmarkListView(ListView):
     model = Bookmark
+    paginate_by = 5
 
 class BookmarkDetailView(DetailView):
     model = Bookmark

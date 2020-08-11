@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{object.site_name}}정보</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+Detail of "{{object.site_name}}"
+{% endblock %}
+
+{% block content %}
     {{object.site_name}}<br/>
     {{object.url}}
-</body>
-</html>
+{% endblock %}
